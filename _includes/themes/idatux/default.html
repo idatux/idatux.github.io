@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    {% if page.fulltitle %}
+    <title>{{ page.fulltitle }}</title>
+    {% else %}
+    <title>{{ page.title }} — IDATUX</title>
+    {% endif %}
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/foundation.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/app.css">
+    <link rel="shortcut icon" href="{{ ASSET_PATH }}/favicon.ico">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/ie.css">
+    <![endif]-->
+
+    <!-- IE Fix for HTML5 Tags. -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <header class="container">
+      <div class="row">
+        <div class="five columns">
+          <h1 id="logo"><a href="{{ HOME_PATH }}" title="{{ site.title }}">{{ site.title }}</a></h1>
+        </div>
+        <nav class="seven columns hide-on-phones">
+          <ul>
+            <li><a href="{{ HOME_PATH }}">Artículos</a></li>
+            <li><a href="{{ HOME_PATH }}">Eventos</a></li>
+            <li><a href="{{ HOME_PATH }}">Acerca de</a></li>            
+            <li><a href="{{ HOME_PATH }}">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header><!-- /header -->
+
+    {{ content }}
+
+    <footer class="container footer-grey">
+      <div class="row">
+        <div class="four columns" id="idatuxinfo">
+          <div class="bold">IDATUX</div>
+            <p>Sitio web del Grupo de Usuarios de código abierto del grupo <a href="http://www.idat.edu.pe/">IDAT</a>
+            quiénes se reúnen para discutir y disfrutar del mundo Open Source.</p>
+        </div>
+
+        <div class="four columns" id="idatuxinfo2">
+        </div>
+        
+        <div class="four columns" id="mailinglist">
+          <div class="bold">Suscríbete a la Lista de correo</div>
+            <form action="http://groups.google.com/group/idatux/boxsubscribe" id="newsSubscribe" method="post">
+              <input type=hidden name="hl" value="es">
+              <input class="input-text small left" id="groupie_email" name="email" size="21" type="text" placeholder="Ingrese su e-mail">
+              <button class="x-small nice radius white button" type="submit" name="sub">Suscribirse</button>
+            </form>
+            <div class="clear"></div>
+            <p>Revisar el historial de la <a href="http://groups.google.com/group/idatux?hl=es" style="white-space:nowrap; " title="Revisar el historial de la lista de correo del grupo">lista de correo &raquo;</a></p> 
+          </div> 
+        </div>
+        
+        <div class="last-row">
+          <div class="four columns"> &copy; 2010 - 2012 IDATUX </div>
+          <ul class="footer-links">
+            <li><a href="{{ HOME_PATH }}">Inicio</a></li>
+            <li class="facebook"><a href="http://www.facebook.com/IDATUX.CSL" title="Síguenos en Facebook">Facebook</a></li>
+            <li class="twitter"><a href="http://twitter.com//idatux" title="Síguenos en Twitter">@idatux</a></li>
+            <li class="rss"><a href="{{ HOME_PATH }}/atom.xml" title="Síguenos vía RSS">Suscríbete al blog</a></li>
+          </ul>
+        </div>
+    </footer><!-- /footer -->  
+
+    <script src="{{ ASSET_PATH }}/javascripts/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/javascripts/modernizr.foundation.js"></script>
+    <script src="{{ ASSET_PATH }}/javascripts/foundation.js"></script>
+    <script src="{{ ASSET_PATH }}/javascripts/app.js"></script>
+    <script src="{{ ASSET_PATH }}/javascripts/idatux.js"></script>
+</body>
+</html>

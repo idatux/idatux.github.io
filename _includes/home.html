@@ -1,0 +1,76 @@
+<div class="container hide-on-phones">
+  <div class="row">
+    <div class="twelve columns">
+      <div id="featured">
+        <img src="assets/themes/idatux/images/slides/speaking.png" />
+
+        <div>
+          <div class="header-block speaking1">
+          <div class="row">
+            <div class="four columns">
+              <h3><a href="">Hacksol</a></h3>
+            </div>
+          </div>
+          
+          <div class="clear"></div>
+          
+          <div class="row">
+            <div class="six columns">
+              <h1>Evento</h1>
+              <h5><span>Sábado 05 de noviembre del 2011</span></h5>
+            </div> 
+          </div> 
+          </div>
+        </div><!-- /item -->
+
+        <div>
+          <div class="header-block speaking2">
+          <div class="row">
+            <div class="four columns">
+              <h3><a href="">Hacksol</a></h3>
+            </div>
+          </div>
+          
+          <div class="clear"></div>
+          
+          <div class="row">
+            <div class="six columns">
+              <h1>Evento</h1>
+              <h5><span>Sábado 05 de noviembre del 2011</span></h5>
+            </div> 
+          </div> 
+          </div>
+        </div><!-- /item -->        
+
+      </div>
+    </div>
+    <hr>
+  </div>
+</div><!-- /slide -->
+
+<div class="container">
+  <section id="featured_content" class="row">
+    <article class="four columns">
+      <h4 id="opensource"><a href="#">Código abierto</a></h4>
+      <p>¿Qué es el software de código abierto? Es seguridad, flexibilidad, accesibilidad, transparencia, e interoperabilidad. 
+      &mdash; El software de código abierto puede ser estudiado, modificado, mejorado y distribuido por cualquiera.</p>
+    </article>
+
+    <article class="four columns">
+      <h4 id="community"><a href="#">Comunidad</a></h4>
+      <p>¿Deseas unirte a la comunidad? ¿Necesitas ayuda con Linux o en algún proyecto de código abierto?
+      &mdash; Buscas un lugar para charlar sobre tecnología? Este es el mejor lugar para empezar.</p>
+    </article>
+
+    <article class="four columns">
+      <h4 id="mobile"><a href="#">Blog</a></h4>
+      <p>Entérese de las últimas noticias en nuestro blog.
+      <ul class="posts">
+      {% for post in site.posts limit:2 %}
+      <li>&raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+      </p>
+    </article>
+  </section>
+</div><!-- /home -->

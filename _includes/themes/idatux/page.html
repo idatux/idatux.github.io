@@ -1,0 +1,22 @@
+{% if page.title == 'IDATUX - Comunidad de Software Libre' %}
+  {% include home.html %}
+{% endif %}
+
+{% if page.title != 'IDATUX - Comunidad de Software Libre' %}
+<div id="content" class="container" role="main">
+    <div class="row">
+      <div class="twelve columns">
+        <div class="idatux-header">
+          <h1><a href="#">{{ page.title }}</a></h1>
+        </div>
+        <hr>
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="twelve columns">
+      {{ content }}
+      </div>
+    </div>
+</div><!-- /content -->
+{% endif %}

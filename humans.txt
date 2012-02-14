@@ -1,0 +1,7 @@
+/* IDATUX Web Site. */
+
+/* SITE */           
+  Standards: HTML5, CSS3
+  Components: jQuery, Modernizr, Zurb Foundation, etc.
+  Software: Vim, Sublime 2, Git
+  Engine: Jekyll
