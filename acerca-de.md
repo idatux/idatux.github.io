@@ -1,30 +1,26 @@
 ---
 layout: page
-title: Acerca de
+title: "Acerca de"
+group: navigation
 ---
 {% include JB/setup %}
 
-El Grupo de Usuarios del Grupo IDAT, es una organizaci√≥n comunitaria dedicada a la promoci√≥n
-y discusi√≥n de tecnolog√≠as innovadoras de c√≥digo abierto.
 
-Nos esforzamos en promover y crecer su uso activo en la comunidad de c√≥digo abierto,
-ofreciendo educaci√≥n y apoyo a trav√©s de nuestra p√°gina web, lista de correo, charlas gratuitas
-y reuniones.
+IDATUX es una comunidad de usuarios de software libre. Es una organizacion comunitaria dedicada a la promociÛn y 
+discusiÛn de tecnologÌas innovadoras de cÛdigo abierto. Nos esforzamos en promover y crecer su uso activo en la 
+comunidad de c√≥digo abierto, ofreciendo apoyo a travÈs de nuestra p·gina web, lista de correo, talleres y charlas.
 
-En IDATUX creemos que el software libre, y el c√≥digo abierto pueden ofrecer grandes beneficios 
-no s√≥lo al grupo IDAT, sino a todo el mundo.
+En IDATUX creemos que el software libre, y el cÛdigo abierto pueden ofrecer grandes beneficios no sÛlo al grupo 
+IDAT, sino a todo el mundo.
 
+
+![El equipo de IDATUX](/assets/themes/idatux/images/team.jpg)
 
 ### Historia
-<hr>
 
-La comunidad de usuarios de software libre IDATUX fue creado el 15 de Mayo del 2010, empezando el movimiento justo cuando se 
-realizaba un evento de software libre auspiciado por IDAT en su aniversario.
+La histoia es incierta, inicio a travÈs de un evento de software libre auspiciado por el instituto IDAT en su aniversario.
+En ese momento el docente de la UTP y de IDAT, Carlos Alberto Jara Alva, junto, con el alumno Carlos Delgado Pizarro, 
+inician IDATUX.
 
-Los fundadores de la comunidad son Carlos Alberto Jara Alva, docente de la UTP ‚Äì FIIS e IDAT Computacion ‚Äì Redes;
-y Carlos Delgado Pizarro, alumno del 6to ciclo de la carrera de computacion e informatica. El logotipo fue creacion de Carlos Delgado Pizarro.
+Durante todo el aÒo, la comunidad con muchos problemas encima fue creciendo de a pocos, obteniendo apoyo de diversas personas y comunidad, sobre todo de la comunidad de Mozilla Per˙, el cual su actual coordinador Juan Sanchez, nos ayudo en diferentes eventos realizados en el mismo IDAT.
 
-Durante todo el a√±o, la comunidad con muchos problemas encima fue creciendo de a pocos, obteniendo apoyo de diversas personas y comunidad, sobre todo de la comunidad de Mozilla Per√∫, el cual su actual coordinador Juan Sanchez, nos ayudo en diferentes eventos realizados en el mismo IDAT.
-
-### El Equipo
-<hr>

@@ -2,7 +2,7 @@
   <div class="row">
     <div class="twelve columns">
       <div id="featured">
-        <img src="assets/themes/idatux/images/slides/speaking0.jpg" />
+        <img src="assets/themes/idatux/images/slides/speaking0.jpg">
 
         <div>
           <div class="header-block speaking1">
@@ -64,13 +64,12 @@
 
     <article class="four columns">
       <h4 id="mobile"><a href="#">Blog</a></h4>
-      <p>Entérese de las últimas noticias en nuestro blog.
+      <p>Entérese de las últimas noticias en nuestro blog.</p>
       <ul class="posts">
       {% for post in site.posts limit:2 %}
       <li>&raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
       </ul>
-      </p>
     </article>
   </section>
 </div><!-- /home -->

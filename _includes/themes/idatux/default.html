@@ -10,10 +10,11 @@
     <title>{{ page.title }} — IDATUX</title>
     {% endif %}
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <link rel="author" href="{{ HOME_PATH }}humans.txt" type="text/plain">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/foundation.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/app.css">
     <link rel="shortcut icon" href="{{ ASSET_PATH }}/favicon.ico">
+    <link rel="publisher" href="https://plus.google.com/106264348622088232219">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/ie.css">
     <![endif]-->
@@ -32,10 +33,9 @@
         </div>
         <nav class="seven columns hide-on-phones">
           <ul>
-            <li><a href="{{ HOME_PATH }}">Artículos</a></li>
-            <li><a href="{{ HOME_PATH }}">Eventos</a></li>
-            <li><a href="{{ HOME_PATH }}">Acerca de</a></li>            
-            <li><a href="{{ HOME_PATH }}">Contacto</a></li>
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include JB/pages_list %}
           </ul>
         </nav>
       </div>
@@ -52,6 +52,15 @@
         </div>
 
         <div class="four columns" id="idatuxinfo2">
+          <script type="text/javascript">
+            window.___gcfg = {lang: 'es'};
+            (function() {
+              var po = document.createElement("script");
+              po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+              var s = document.getElementsByTagName("script")[0];
+              s.parentNode.insertBefore(po, s);
+            })();</script>
+          <div class="g-plus" data-href="https://plus.google.com/106264348622088232219" data-width="300" data-height="131" data-theme="light"></div>        
         </div>
         
         <div class="four columns" id="mailinglist">
@@ -62,8 +71,8 @@
               <button class="x-small nice radius white button" type="submit" name="sub">Suscribirse</button>
             </form>
             <div class="clear"></div>
-            <p>Revisar el historial de la <a href="http://groups.google.com/group/idatux?hl=es" style="white-space:nowrap; " title="Revisar el historial de la lista de correo del grupo">lista de correo &raquo;</a></p> 
-          </div> 
+            <p>Revisar el historial de la <a href="http://groups.google.com/group/idatux?hl=es" style="white-space:nowrap; " title="Revisar el historial de la lista de correo del grupo">lista de correo &raquo;</a></p>
+          </div>
         </div>
         
         <div class="last-row">
@@ -71,16 +80,17 @@
           <ul class="footer-links">
             <li><a href="{{ HOME_PATH }}">Inicio</a></li>
             <li class="facebook"><a href="http://www.facebook.com/IDATUX.CSL" title="Síguenos en Facebook">Facebook</a></li>
-            <li class="twitter"><a href="http://twitter.com//idatux" title="Síguenos en Twitter">@idatux</a></li>
-            <li class="rss"><a href="{{ HOME_PATH }}/atom.xml" title="Síguenos vía RSS">Suscríbete al blog</a></li>
+            <li class="twitter"><a href="http://twitter.com/idatux" title="Síguenos en Twitter">@idatux</a></li>
+            <li class="rss"><a href="{{ HOME_PATH }}atom.xml" title="Síguenos vía RSS">Suscríbete al blog</a></li>
           </ul>
         </div>
-    </footer><!-- /footer -->  
+    </footer><!-- /footer -->
 
     <script src="{{ ASSET_PATH }}/javascripts/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/modernizr.foundation.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/foundation.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/app.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/idatux.js"></script>
+    {% include JB/analytics %}
 </body>
 </html>

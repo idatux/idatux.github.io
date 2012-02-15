@@ -25,6 +25,7 @@ header nav li {
   white-space: nowrap;
 }
 header nav li a { float: left; padding: 3px; font-size: 16px; color: #848182; }
+header nav li a.active { color: #2A85E8; }
 
 .header-block { margin-top: 1px; width: 100%; height: 304px; margin-bottom: 20px;}
 .header-block h1, .header-block h5, .header-block h3 { padding-left: 30px; }
@@ -66,7 +67,8 @@ header nav li a { float: left; padding: 3px; font-size: 16px; color: #848182; }
 #content{
   -moz-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+/*  box-shadow: 0 10px 30px rgba(0,0,0,0.3);*/
+  box-shadow: 0 0 60px rgba(0,0,0,.2);
 }
 #content .row { background: #fff; }
 
@@ -81,6 +83,8 @@ header nav li a { float: left; padding: 3px; font-size: 16px; color: #848182; }
   #content[role="main"] { margin: auto; width: auto; }
 }
 
+.idatux-header { color: #DDD; }
+  
 .footer-grey {
   background-color: #f5f5f5; 
   background-image: url(../images/footer-shadow.gif); 
@@ -109,3 +113,33 @@ div.bold {font-size: 14px; font-weight: bold; }
 .footer-links .rss { background: url(../images/icons/rss.png) no-repeat -0px 0px; padding-left: 18px;}
 .footer-links li:last-child { border-right:none;margin-right: 0px; }
 .footer-grey a:hover { color:#FF5C00;  }
+
+
+/* bueyada */
+#sidebar {
+  overflow: hidden;
+}
+.sidenav-title {
+  margin-bottom: 15px;
+}
+ul.previous {
+  margin: 5px 0;
+}
+
+ul.sub-nav {
+  font-size: 16px;
+  margin-top: 20px;
+  border-top: 2px solid #EEE;
+}
+
+ul.sub-nav li {
+display: block;
+float: left;
+padding: 5px 30px 0 0;
+margin-right: 10px;
+border-top: 5px solid white;
+}
+
+ul.sub-nav li.current {
+border-top: 5px solid #FF6908;
+}
