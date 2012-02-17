@@ -1,8 +1,12 @@
 ---
-layout: post
-title: "Nuevo inicio"
-category: general
-tags: []
+layout : post
+title : "Nuevo inicio"
+description : "Migracion a Jekyll Bootstrap."
+group: blog
+tags : [jekyll, wordpress]
+categories: 
+- "general"
+  
 ---
 {% include JB/setup %}
 
@@ -23,6 +27,7 @@ el puerco del editor no edite el formato de mis artículos. Además, tengo absol
 el estilo y el diseño de la página.
 
 ####<abbr title="Too long; didn't read">TL;DR</abbr>####
+<br>
 
 ### Motivos
 
@@ -31,21 +36,20 @@ Al ser contenido estático, pierdes algunas cosas como el sistema de comentarios
 resuelto con el uso de [Disqus](http://disqus.com/). De paso he aprovechado para hacer un pequeño 
 nuevo diseño.
 
-
 ### Markdown y la bondades de SASS
 
 La creación de artículos o posts utilizando solamente etiquetas HTML puede llevar mucho tiempo, como
 estar propenso a errores con el uso del editores WYSIWYG cómo el de Wordpress.
-Ahora utilizamos Markdown, un lenguaje de marcado ligero, que convierte de foma automática y 
+Ahora utilizamos **Markdown**, un lenguaje de marcado ligero, que convierte de foma automática y 
 segura nuestros textos a HTML. Además, utilizamos SASS para simplificar drásticamente nuestro código CSS.
 
-### No hay Administrador (back-end)
+### No hay Administración
 
 La mejor parte de **Markdown** es que convierte todo en archivos HTML estáticos. Por lo tanto,
 no hay ningún administrador visual en el sitio.
 
-Desde ahora, nos olvidamos por completo de actualizaciones engorrosas y parches a wordpress
-o a ningún otro software debido a posibles ataques, del molesto spam, y demás mierdillas.
+Desde ahora, nos olvidamos por completo de actualizaciones engorrosas y parches a Wordpress
+o a ningún otro software propenso a posibles ataques, del molesto spam, y demás mierdillas.
 
 Esto significa, que no es posble la inactividad del sitio debido a una falla en la base de datos.
 También es mucho más difícil atacar el sitio. El único punto de ataque es ahora el servidor web,
@@ -61,8 +65,9 @@ Eso es todo lo que tengo que hacer para publicar el nuevo contenido.
 
 Como desarrollador, estoy acostumbrado a los sistemas de control de versiones como Git y Mercurial.
 (Lo adminto, use CVS y SVN. Y sí, ¬¬ soy de la vieja escuela).
-Todos estos programas llevan el historial de cada acción en el repositorio, lugar en donde se almacena 
-todo el código fuente. Ahora ya saben por si meten la pata, esto se resolvería sin nigún problema en un ¡Achís!.
+Todos estos programas llevan el historial de cada acción en el repositorio, y es el lugar en donde
+se almacena todo el código fuente. Ahora ya saben por si meten la pata, esto se resolvería sin
+nigún problema en un ¡Achís!.
 
 Dado que los archivos de Markdown son sólo eso, archivos. Incluso ahora puedo hacer diferencias entre 
 estos (diff), crear ramas (branch), fusiones (merge), incluso cherry pickings con toda libertad.
@@ -70,6 +75,7 @@ estos (diff), crear ramas (branch), fusiones (merge), incluso cherry pickings co
 Uno no puede pensar en hacer estas cosas en Wordpress, sobre todo, sin hacer alguna modificación 
 importante en el software.
 
-Por útlimo, si estás interesado en revisar y contribuir en el sitio, estoy almacenando todo el 
+Por útlimo, si estás interesado en revisar y contribuir con la web, estoy almacenando todo el 
 sitio en un proyecto en [github](https://github.com/idatux/idatux.github.com). Y sí, eres bievenido
 ayudar en el sitio.
+

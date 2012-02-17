@@ -1,8 +1,8 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: blog/:year/:month/:day/:title 
+permalink: /blog/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "config.rb"]
 auto: true
 pygments: true
 
@@ -123,5 +123,6 @@ JB :
   # where [HELPER] is the name of the helper you are overriding.
   
 
-  ## custom
-  paginate: 6
+## IDATUX - Custom
+paginate: 6
+pygments: true

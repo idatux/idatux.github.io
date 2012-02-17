@@ -115,7 +115,7 @@ div.bold {font-size: 14px; font-weight: bold; }
 .footer-grey a:hover { color:#FF5C00;  }
 
 
-/* bueyada */
+/* post.html */
 #sidebar {
   overflow: hidden;
 }
@@ -127,19 +127,32 @@ ul.previous {
 }
 
 ul.sub-nav {
-  font-size: 16px;
-  margin-top: 20px;
-  border-top: 2px solid #EEE;
+  font-size: 15px;
+  margin-top: 4px;
+/*  border-top: 3px solid #EEE; */
 }
 
 ul.sub-nav li {
-display: block;
-float: left;
-padding: 5px 30px 0 0;
-margin-right: 10px;
-border-top: 5px solid white;
+  display: block;
+  float: left;
+  padding: 5px 30px 0 0;
+  margin-right: 10px;
+  border-top: 2px solid white;
 }
 
-ul.sub-nav li.current {
-border-top: 5px solid #FF6908;
+ul.sub-nav li.active {
+  border-top: solid 3px #DB1725;
 }
+
+.post-data ul { position: absolute; right: 5%; }
+.post-data nav li {
+  line-height: 14px;
+  color: #fff;
+  font-weight: 500;
+  padding-right: 12px;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+

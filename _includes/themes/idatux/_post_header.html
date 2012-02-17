@@ -1,0 +1,11 @@
+<div id="content" class="container" role="main">
+    <div class="row">
+      <div class="twelve columns">
+        <ul class="sub-nav">
+          {% assign pages_list = site.pages %}
+          {% assign group = 'blog' %}
+          {% include JB/pages_list %}
+        </ul>
+      </div>
+    </div>
+</div>

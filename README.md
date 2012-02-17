@@ -14,3 +14,19 @@ Los artículos se escriben en texto plano usando [Markdown](http://daringfirebal
 
 ¿Cómo?
 ======
+
+Pues toca instalar **Ruby**, se sugiere el uso de [RVM](http://beginrescueend.com/).
+
+Modo local
+----------
+
+Primero debe crear un fork del proyecto, y descagarlo.
+Para descargar las dependencias:
+
+    $ bundle install
+
+
+Para ejecutar el sitio de forma local:
+
+    $ foreman start
+

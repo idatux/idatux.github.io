@@ -11,8 +11,7 @@
     {% endif %}
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <link rel="author" href="{{ HOME_PATH }}humans.txt" type="text/plain">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/foundation.css">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/app.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/stylesheets/screen.css">
     <link rel="shortcut icon" href="{{ ASSET_PATH }}/favicon.ico">
     <link rel="publisher" href="https://plus.google.com/106264348622088232219">
     <!--[if lt IE 9]>
@@ -33,13 +32,14 @@
         </div>
         <nav class="seven columns hide-on-phones">
           <ul>
+            <li><a href="/blog">Blog</a></li>          
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}
           </ul>
         </nav>
       </div>
-    </header><!-- /header -->
+    </header>
 
     {{ content }}
 
@@ -60,7 +60,7 @@
               var s = document.getElementsByTagName("script")[0];
               s.parentNode.insertBefore(po, s);
             })();</script>
-          <div class="g-plus" data-href="https://plus.google.com/106264348622088232219" data-width="300" data-height="131" data-theme="light"></div>        
+          <div class="g-plus" data-href="https://plus.google.com/106264348622088232219" data-width="300" data-height="131" data-theme="light"></div>
         </div>
         
         <div class="four columns" id="mailinglist">
@@ -84,12 +84,11 @@
             <li class="rss"><a href="{{ HOME_PATH }}atom.xml" title="Síguenos vía RSS">Suscríbete al blog</a></li>
           </ul>
         </div>
-    </footer><!-- /footer -->
+    </footer>
 
-    <script src="{{ ASSET_PATH }}/javascripts/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/modernizr.foundation.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/foundation.js"></script>
-    <script src="{{ ASSET_PATH }}/javascripts/app.js"></script>
     <script src="{{ ASSET_PATH }}/javascripts/idatux.js"></script>
     {% include JB/analytics %}
 </body>

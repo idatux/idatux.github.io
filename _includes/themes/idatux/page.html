@@ -1,18 +1,8 @@
-{% if page.title == 'IDATUX - Comunidad de Software Libre' %}
-  {% include home.html %}
+{% if page.group == 'blog' %}
+{% include themes/idatux/_post_header.html %}
 {% endif %}
 
-{% if page.title != 'IDATUX - Comunidad de Software Libre' %}
 <div id="content" class="container" role="main">
-    <div class="row">
-      <div class="twelve columns">
-        <div class="idatux-header">
-          <h2>{{ page.title }}</h2>
-        </div>
-        <hr>
-      </div>
-    </div>
-
     <div class="row">
       <div class="twelve columns">
       {{ content }}
@@ -20,4 +10,3 @@
     </div>
 
 </div>
-{% endif %}
